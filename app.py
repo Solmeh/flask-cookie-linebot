@@ -52,12 +52,12 @@ def handle_message(event):
     except:
         user_name = "Unknown"
 
-    reply_text = handle_text_message(user_id, user_name, text)
+    reply_message = handle_text_message(user_id, user_name, text)
     
-    if reply_text:
+    if reply_message:
         line_bot_api.reply_message(
             reply_token,
-            TextSendMessage(text=reply_text)
+            reply_message
         )
 
 if __name__ == "__main__":
