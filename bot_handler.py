@@ -74,23 +74,25 @@ def handle_text_message(user_id, user_name, text):
                         },
                         {
                             "type": "button",
-                            "style": "secondary",
+                            "style": "primary",
                             "height": "sm",
                             "action": {
                                 "type": "message",
                                 "label": "升級冷卻 (時間-1分)",
                                 "text": "升級冷卻"
-                            }
+                            },
+                            "color": "#1DB446"
                         },
                         {
                             "type": "button",
-                            "style": "secondary",
+                            "style": "primary",
                             "height": "sm",
                             "action": {
                                 "type": "message",
                                 "label": "升級幸運 (每次+1)",
                                 "text": "升級幸運"
-                            }
+                            },
+                            "color": "#1DB446"
                         }
                     ],
                     "flex": 0
